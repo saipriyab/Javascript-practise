@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+Soting using insertion sort
+</title>
+<script language="javascript">
+function insertion(){
+var x=[9,4,1,2,8,7,6,5];
+
+for (var i = 1; i < x.length; i++) {
+		var tmp = x[i]; 
+		
+		for (var j = i - 1; j >= 0 && (x[j] > tmp); j--) {
+			
+			x[j + 1] = x[j];
+		}
+		
+		x[j + 1] = tmp;
+	}
+
+document.write("<br>sorted elements are</br>"+x); 
+}
+</script>
+</head>
+<body onload="insertion()">
+</body>
+</html>

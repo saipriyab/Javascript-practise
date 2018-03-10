@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>
+sort an array of JavaScript objects
+</title>
+<script language="javascript">
+function sort1()
+{
+var myObj = {
+    'b': 'bbbbbbb',
+    'c': 'ccccccc',
+    'a': 'aaaaaaaa'
+  },
+  keys = Object.keys(myObj),
+  i, len = keys.length;
+
+keys.sort();
+
+for (i = 0; i < len; i++) {
+  k = keys[i];
+  document.writeln(k + ':' + myObj[k]+"<br>");
+}
+}
+</script>
+</head>
+<body onload="sort1()">
+</body>
+</html>

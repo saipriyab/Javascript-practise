@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>digital clock</title>
+<script language="javascript">
+function clock()
+{
+var date=new Date();
+document.getElementById('x').innerHTML=date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+var t=setTimeout(clock,1000);
+}
+</script>
+</head>
+<body onLoad="clock()">
+<p id="x"></p>
+</body>
+</html>

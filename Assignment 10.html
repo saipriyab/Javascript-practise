@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>
+printing last n elements
+</title>
+<script language="javascript">
+function display()
+{
+var a=[1,2,3,4,5,6,7,8,9,10];
+var a1=document.getElementById('number').value;
+var count=1;
+if(a1>a.length)
+{
+for(var i=0;i<a.length;i++)
+{
+document.write(a[i]+"&nbsp");
+}
+}
+else
+{
+for(var j=a.length-1;count<=a1;j--)
+{
+document.write(a[j]+"&nbsp");
+count++;
+}
+}
+}
+</script>
+</head>
+<body>
+<form>
+<table border="1">
+<tr>
+<td>
+Enter the number of elements you want to display
+</td>
+<td>
+<input type="text" name="number" id="number">
+</td>
+</tr>
+<tr>
+<td>
+<button onclick="display()">click to display</button>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

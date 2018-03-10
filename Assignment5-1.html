@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>
+Sorting using Bubble Sort
+</title>
+<script language="javascript">
+function sort()
+{
+var x=[4,1,3,2,6,7,0,5];
+var k=0;
+for(var i=0;i<x.length;i++)
+{
+for(var j=i+1;j<x.length;j++)
+{
+if(x[i]>x[j])
+{
+k=x[i];
+x[i]=x[j];
+x[j]=k;
+}
+}
+}
+document.write("<br>after bubble sort&nbsp<br>"+x);
+}
+</script>
+</head>
+<body onload="sort()">
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+<script>
+    var images = new Array(7);  
+    images[0] = "bird0.jpg";
+    images[1] = "bird1.jpg";
+    images[2] = "bird3.jpg";
+    images[3] = "bird4.jpg";
+    images[4] = "bird5.jpg";
+    images[5] = "bird6.jpg";
+  images[6] = "bird7.jpg";
+        var numimg = 7;
+    var curimg = 1;
+
+  function  goback() {
+    var im=document.getElementById("image");
+document.getElementById("next").disabled=false;
+     
+    if(curimg>0)
+   {
+    im.src = images[curimg-1];
+    curimg = curimg - 1;
+    
+   }else{
+   
+    document.getElementById("prev").disabled=true;
+   }
+
+
+}
+
+function gofwd(){
+  document.getElementById("prev").disabled=false;
+var im=document.getElementById("image");
+    if(curimg < numimg){
+    im.src = images[curimg+1];
+    curimg = curimg + 1;
+   }else{
+    
+document.getElementById("next").disabled=true;
+      }
+
+
+}
+
+
+</script>
+
+<body>
+<div style="border: solid 12px blue; width: 500px; height: 500px;">
+<img src="Images/lab1.jpg" alt="lab1" height="500" width="500" id="image" />
+</div><br>
+<input type="button" value="PREVIOUS" id="prev" name="prev" onclick="goback();" >
+
+<input type="button" value="NEXT" id="next" name="next" onclick="gofwd();" >
+</body>
+</html>

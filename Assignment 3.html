@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>
+function to parse an URL and print the details 
+</title>
+<script language="javascript">
+function parse()
+{
+var x=window.location.protocol;
+var y=window.location.port;
+var z=window.location.host;
+var w=window.location.search;
+var c=window.location.origin;
+var d=window.location.hostname;
+var e=window.location.pathname;
+document.writeln("protocol&nbsp&nbsp=&nbsp&nbsp"+x);
+document.writeln("<br>Port&nbsp&nbsp=&nbsp&nbsp"+y);
+document.writeln("<br>Host&nbsp&nbsp=&nbsp&nbsp"+z);
+document.writeln("<br>Search&nbsp&nbsp=&nbsp&nbsp"+w);
+document.writeln("<br>Origin&nbsp&nbsp=&nbsp&nbsp"+c);
+document.writeln("<br>HostName&nbsp&nbsp=&nbsp&nbsp"+d);
+document.writeln("<br>PathName&nbsp&nbsp=&nbsp&nbsp"+e);
+}
+</script>
+</head>
+<body onload=parse()>
+</body>
+</html>

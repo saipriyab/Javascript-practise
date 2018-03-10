@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>
+count and display itemlist of a drop down box
+</title>
+<script langugae="javascript">
+function calculate()
+{
+var x=window.document.getElementById('list').length;
+var x1=window.document.getElementById('list').options;
+var z="Length is : "+x+" values are";
+for(var i=0;i<x;i++)
+{
+z=z+x1[i].value;
+}
+alert(z);
+}
+
+</script>
+</head>
+<body>
+<form>
+<table border="1">
+<tr>
+<td>
+<select id="list">
+  <option>HTML</option>
+  <option>XML</option>
+  <option>XSLT</option>
+  <option>CSS</option>
+  <option>JavaScript</option
+</td></tr></select>
+<tr><td>
+<input type="submit" value="click to calculate" onclick="calculate()">
+</td></tr></table></form>
+</body>
+</html>
